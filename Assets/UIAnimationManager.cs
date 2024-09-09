@@ -53,4 +53,9 @@ public class UIAnimationManager : MonoBehaviour
         //Vector3, duration, rotate mode (Search it up)
         button.transform.DOLocalRotate(rotation, animationDuration, RotateMode.FastBeyond360);
     }
+
+    public void JumpButton()
+    {
+        button.transform.DOLocalJump(finalPosition, 30, 2, animationDuration);
+    }
 }
